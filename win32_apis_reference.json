@@ -1,0 +1,228 @@
+{
+  "User interface": {
+    "description": "The Windows UI API create and use windows to display output, prompt for user input, and carry out the other tasks that support interaction with the user.",
+    "features": [
+      {
+        "name": "Windows Accessibility",
+        "description": "Allows Windows developers to develop accessible Windows applications (for users with disabilities, personal preferences, or specific work styles) and automation features for testing Windows applications.",
+        "functions": [
+          {
+            "name": "RegisterPointerInputTarget",
+            "description": "Register a target window to which all pointer input of the specified type is redirected."
+          },
+          {
+            "name": "RegisterPointerInputTargetEx",
+            "description": "Use a deprecated function."
+          },
+          {
+            "name": "SoundSentryProc",
+            "description": "Produce a customized visual signal when the SoundSentry accessibility feature is on and a Windows-based application (or an application running in a window) generates a sound through the computer's built-in speaker."
+          },
+          {
+            "name": "UnregisterPointerInputTarget",
+            "description": "Unregister a target window to which all pointer input of the specified type is redirected."
+          },
+          {
+            "name": "UnregisterPointerInputTargetEx",
+            "description": "Use a deprecated function."
+          }
+        ]
+      },
+      {
+        "name": "Desktop Window Manager (DWM)",
+        "description": "Control or access many of the DWM Desktop composition features.",
+        "functions": [
+          {
+            "name": "DwmAttachMilContent",
+            "description": "Use a deprecated function."
+          },
+          {
+            "name": "DwmDefWindowProc",
+            "description": "DWM hit testing within the non-client area."
+          },
+          {
+            "name": "DwmDetachMilContent",
+            "description": "Use a deprecated function."
+          },
+          {
+            "name": "Enables the blur effect on a specified window.",
+            "description": "Enables the blur effect on a specified window.",
+            "keywords": [
+              "blur effect"
+            ]
+          },
+          {
+            "name": "DwmEnableComposition",
+            "description": "Enables or disables DWM composition (deprecated as of Windows 8).",
+            "keywords": [
+              "DWM composition"
+            ]
+          },
+          {
+            "name": "DwmEnableMMCSS",
+            "description": "Notifies the DWM to opt in to or out of Multimedia Class Schedule Service (MMCSS) scheduling while the calling process is alive.",
+            "keywords": [
+              "Multimedia Class Schedule Service (MMCSS)"
+            ]
+          },
+          {
+            "name": "DwmExtendFrameIntoClientArea",
+            "description": "Extends the window frame into the client area."
+          },
+          {
+            "name": "DwmFlush",
+            "description": "Issues a flush call that blocks the caller until the next present, when all of the Microsoft DirectX surface updates that are currently outstanding have been made. This compensates for very complex scenes or calling processes with very low priority."
+          },
+          {
+            "name": "DwmGetColorizationColor",
+            "description": "Retrieves the current color used for DWM glass composition. This value is based on the current color scheme and can be modified by the user."
+          },
+          {
+            "name": "DwmGetCompositionTimingInfo",
+            "description": "Retrieves the current composition timing information for a specified window."
+          },
+          {
+            "name": "DwmGetGraphicsStreamClient",
+            "description": "Use a deprecated function."
+          },
+          {
+            "name": "DwmGetGraphicsStreamTransformHint",
+            "description": "Use a deprecated function."
+          },
+          {
+            "name": "DwmGetTransportAttributes",
+            "description": "Retrieves transport attributes."
+          },
+          {
+            "name": "DwmGetUnmetTabRequirements",
+            "description": "Checks the requirements needed to get tabs in the application title bar for the specified window (This function is nonfunctional for Windows 10 version 1803).",
+            "keywords": [
+              "application title bar"
+            ]
+          },
+          {
+            "name": "DwmGetWindowAttribute",
+            "description": "Retrieves the current value of a specified attribute applied to a window.",
+            "keywords": [
+              "window"
+            ]
+          },
+          {
+            "name": "DwmInvalidateIconicBitmaps",
+            "description": "indicate that all previously provided iconic bitmaps from a window, both thumbnails and peek representations, should be refreshed.",
+            "keywords": [
+              "window",
+              "bitmap"
+            ]
+          },
+          {
+            "name": "DwmIsCompositionEnabled",
+            "description": "Obtains a value that indicates whether DWM composition is enabled.",
+            "keywords": [
+              "DWM composition"
+            ]
+          },
+          {
+            "name": "DwmModifyPreviousDxFrameDuration",
+            "description": "Changes the number of monitor refreshes through which the previous frame will be displayed (no longer supported starting with Windows 8.1).",
+            "keywords": [
+              "monitor",
+              "monitor refreshes"
+            ]
+          },
+          {
+            "name": "DwmQueryThumbnailSourceSize",
+            "description": "Retrieves the source size of the DWM thumbnail.",
+            "keywords": [
+              "DWM thumbnail"
+            ]
+          },
+          {
+            "name": "DwmRegisterThumbnail",
+            "description": "Creates a DWM thumbnail relationship between the destination and source windows.",
+            "keywords": [
+              "DWM thumbnail",
+              "window",
+              "thumbnail"
+            ]
+          },
+          {
+            "name": "DwmRenderGesture",
+            "description": "Notifies DWM that a touch contact has been recognized as a gesture, and that DWM should draw feedback for that gesture.",
+            "keywords": [
+              "gesture",
+              "touch contact"
+            ]
+          },
+          {
+            "name": "DwmSetDxFrameDuration",
+            "description": "Sets the number of monitor refreshes through which to display the presented frame (no longer supported starting with Windows 8.1).",
+            "keywords": [
+              "monitor",
+              "monitor refreshes"
+            ]
+          },
+          {
+            "name": "DwmSetIconicLivePreviewBitmap",
+            "description": "Sets a static, iconic bitmap to display a live preview (also known as a Peek preview) of a window or tab. The taskbar can use this bitmap to show a full-sized preview of a window or tab.",
+            "keywords": [
+              "bitmap",
+              "Peek preview"
+            ]
+          },
+          {
+            "name": "DwmSetIconicThumbnail",
+            "description": "Sets a static, iconic bitmap on a window or tab to use as a thumbnail representation. The taskbar can use this bitmap as a thumbnail switch target for the window or tab.",
+            "keywords": [
+              "bitmap",
+              "thumbnail"
+            ]
+          },
+          {
+            "name": "DwmSetPresentParameters",
+            "description": "Sets the present parameters for frame composition. it starting with Windows 8.1."
+          },
+          {
+            "name": "DwmSetWindowAttribute",
+            "description": "Sets the value of non-client rendering attributes for a window.",
+            "keywords": [
+              "window"
+            ]
+          },
+          {
+            "name": "DwmShowContact",
+            "description": "Specify the visual feedback type to draw in response to a particular touch or pen contact.",
+            "keywords": [
+              "touch contact",
+              "pen contact"
+            ]
+          },
+          {
+            "name": "DwmTetherContact",
+            "description": "Enables the graphical feedback of touch and drag interactions to the user."
+          },
+          {
+            "name": "DwmTransitionOwnedWindow",
+            "description": "Coordinates the animations of tool windows with the DWM."
+          },
+          {
+            "name": "DwmUnregisterThumbnail",
+            "description": "Removes a DWM thumbnail relationship created by the DwmRegisterThumbnail function.",
+            "keywords": [
+              "DWM thumbnail",
+              "window",
+              "thumbnail"
+            ]
+          },
+          {
+            "name": "DwmUpdateThumbnailProperties",
+            "description": "Updates the properties for a DWM thumbnail.",
+            "keywords": [
+              "DWM thumbnail"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
